@@ -1,0 +1,107 @@
+.profile-container {
+    max-width: 960px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.user-info h2 {
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.edit-btn-wrapper {
+    margin-left: auto;
+}
+
+.edit-btn {
+    padding: 6px 12px;
+    border: 1px solid #e25151;
+    color: #e25151;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tab.active {
+    color: #e25151;
+    border-bottom: 2px solid #e25151;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 50px;
+    padding-top: 15px;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.product-image {
+    background-color: #ccc;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.product-name {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/*レスポンシブデザイン*/
+/* PC向け（1400px〜1540px） */
+@media (min-width: 1400px) and (max-width: 1540px) {
+    .form-container {
+        width: 600px; /* 固定幅でも崩れないようにする */
+    }
+}
+
+/* タブレット向け（768px〜850px） */
+@media (min-width: 768px) and (max-width: 850px) {
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    textarea,
+    button {
+        font-size: 16px;
+    }
+}

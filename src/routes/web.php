@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+//テスト用（view)
+Route::get('/test-layout', function () {
+    return view('sell');
 });
+
+
+
+
+//ログイン済み、未ログインユーザーの両方閲覧できる画面
+//未ログインユーザーのみ
+//ログインユーザーのみ

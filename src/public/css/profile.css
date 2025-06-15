@@ -1,0 +1,87 @@
+.form-container {
+    max-width: 600px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.image-upload {
+    display: flex; /* 横並びにする */
+    align-items: center; /* 縦方向中央揃え */
+    gap: 20px; /* 要素の間にスペース */
+    margin-bottom: 20px;
+}
+
+.image-preview {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.image-label {
+    color: #e25151;
+    border: 1px solid #e25151;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e25151;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*レスポンシブデザイン*/
+/* PC向け（1400px〜1540px） */
+@media (min-width: 1400px) and (max-width: 1540px) {
+    .form-container {
+        width: 600px; /* 固定幅でも崩れないようにする */
+    }
+}
+
+/* タブレット向け（768px〜850px） */
+@media (min-width: 768px) and (max-width: 850px) {
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    textarea,
+    button {
+        font-size: 16px;
+    }
+}

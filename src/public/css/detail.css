@@ -1,0 +1,160 @@
+.detail-container {
+    display: flex;
+    max-width: 1000px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 70px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.image-column {
+    flex: 1;
+}
+
+.product-image {
+    width: 85%;
+    aspect-ratio: 1 / 1;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.info-column {
+    flex: 1;
+}
+
+.product-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.brand-name {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.purchase-btn {
+    background-color: #e25151;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.product-description p,
+.product-info p {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.tag {
+    background-color: #eee;
+    padding: 2px 8px;
+    margin-right: 5px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.comments {
+    margin-top: 30px;
+}
+
+.comment-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.comment-user {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.comment-text {
+    background-color: #eee;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.comment-form {
+    margin-top: 20px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.comment-form button {
+    background-color: #e25151;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*レスポンシブデザイン*/
+/* PC向け（1400px〜1540px） */
+@media (min-width: 1400px) and (max-width: 1540px) {
+    .form-container {
+        width: 1000px; /* 固定幅でも崩れないようにする */
+    }
+}
+
+/* タブレット向け（768px〜850px） */
+@media (min-width: 768px) and (max-width: 850px) {
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    textarea,
+    button {
+        font-size: 16px;
+    }
+}
